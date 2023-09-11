@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,27 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/1hourLotto.css">
 </head>
+
 <body>
-    
+    <main id="app">
+        <nav class="navbar">
+            <h1 class="navbar_logo">
+                1HOUR <span class="navbar_logo_part">LOTTO</span>
+            </h1>
+
+            <ul class="navbar_menu">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">구매</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+
+            <ul class="navbar_profile">
+                <li><a href="#">로그인</a></li>
+                <li id="money_stat"><a>보유금액 : <span id="money">0</span>원</a></li>
+            </ul>
+        </nav>
+    </main>
     <script src="js/1hourLotto.js"></script>
 </body>
+
 </html>
