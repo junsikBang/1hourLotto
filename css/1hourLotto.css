@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: black;
 }
 
 .navbar {
@@ -7,7 +8,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px 12px;
-    background-color: black;
+    border-bottom: 1px solid white;
 }
 
 .navbar_logo {
@@ -31,7 +32,7 @@ a {
 }
 
 .navbar_menu li {
-    padding: 8px 30px;
+    padding: 8px 50px;
 }
 
 .navbar_menu li:hover {
@@ -53,4 +54,38 @@ a {
 
 #money_stat {
     display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.lotto_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 50px;
+    border: 1px solid white;
+}
+
+.lotto_box > img {
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+    margin: 0 20px;
+}
+
+.lotto_num {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0 20px;
+    background-color: red;
+    border-radius: 50%;
 }
