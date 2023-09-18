@@ -89,3 +89,23 @@ a {
     background-color: white;
     border-radius: 50%;
 }
+
+.blur_box {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 250px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.795);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    width: 50%;
+    background-color: aquamarine;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
