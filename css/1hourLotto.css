@@ -103,7 +103,7 @@ a {
 }
 
 .timer {
-    width: 50%;
+    width: auto;
     font-size: 100px;
     font-weight: bold;
     text-align: center;
@@ -125,6 +125,48 @@ a {
     color: yellow;
 }
 
+/*toggle 클래스*/
 .dis_none {
     color: black;
+}
+
+.lotto_record_box {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    margin-top: 50px;
+}
+
+.lotto_record_title {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.record {
+    list-style: none;
+}
+
+.record > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.record > li > img {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+}
+
+.lotto_record_num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    margin: 0 30px;
+    background-color: white;
+    border-radius: 50%;
 }
