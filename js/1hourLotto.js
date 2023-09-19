@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function()
             s = 59;
             m--;
             if(m < 0) {
-                m = 59 - current_min;
+                m = 59;
                 blur.style.display = 'none';
                 start();
             }
@@ -119,6 +119,10 @@ function start() {
 
     setTimeout(function(){
         blur.style.display = 'flex';
+        for(let i = 0; i < 7; i++) {
+            lotto_nums[i].innerText = '0';
+            lotto_nums[i].style.backgroundColor = 'white';
+        }
         comment.innerText = "... 추첨 대기중 입니다 ...";
     }, 15000);
 }
