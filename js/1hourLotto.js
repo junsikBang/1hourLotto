@@ -2,6 +2,7 @@ const lotto_box = document.getElementsByClassName('lotto_box')[0];
 const lotto_nums = document.getElementsByClassName('lotto_num');
 const blur = document.getElementsByClassName('blur_box')[0];
 const comment = document.getElementsByClassName('comment')[0];
+const lotto_record_nums = document.getElementsByClassName('lotto_record_num');
 let colors = ['red', 'yellow', 'blue', 'white'];
 let i = 0;
 
@@ -120,6 +121,8 @@ function start() {
     setTimeout(function(){
         blur.style.display = 'flex';
         for(let i = 0; i < 7; i++) {
+            lotto_record_nums[i].innerText = lottoArr[i];
+            lotto_record_nums[i].style.backgroundColor = lotto_nums[i].style.backgroundColor;
             lotto_nums[i].innerText = '0';
             lotto_nums[i].style.backgroundColor = 'white';
         }
