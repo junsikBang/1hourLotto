@@ -42,9 +42,12 @@ window.addEventListener('DOMContentLoaded', function()
     }, 1000);
 });
 
+
+let lotto;
+let lottoArr = new Array();
+
 function start() {
-    let lotto;
-    let lottoArr = new Array();
+    
     for(let i = 0; i < 6; i++) {
         lotto = Math.floor(Math.random() * 45) + 1;
 
@@ -120,12 +123,24 @@ function start() {
 
     setTimeout(function(){
         blur.style.display = 'flex';
+        plusFun();
         for(let i = 0; i < 7; i++) {
-            lotto_record_nums[i].innerText = lottoArr[i];
-            lotto_record_nums[i].style.backgroundColor = lotto_nums[i].style.backgroundColor;
             lotto_nums[i].innerText = '0';
             lotto_nums[i].style.backgroundColor = 'white';
         }
         comment.innerText = "... 추첨 대기중 입니다 ...";
     }, 15000);
+}
+
+function plusFun() {
+    let plusLi = document.createElement('li');
+    plusLi.innerHTML = "<div class='lotto_record_num' style='background-color: "+ lotto_nums[0].style.backgroundColor +"'>"+ lottoArr[0] +"</div>" +
+                        "<div class='lotto_record_num' style='background-color: "+ lotto_nums[1].style.backgroundColor +"'>"+ lottoArr[1] +"</div>" +
+                        "<div class='lotto_record_num' style='background-color: "+ lotto_nums[2].style.backgroundColor +"'>"+ lottoArr[2] +"</div>" +
+                        "<div class='lotto_record_num' style='background-color: "+ lotto_nums[3].style.backgroundColor +"'>"+ lottoArr[3] +"</div>" +
+                        "<div class='lotto_record_num' style='background-color: "+ lotto_nums[4].style.backgroundColor +"'>"+ lottoArr[4] +"</div>" +
+                        "<div class='lotto_record_num' style='background-color: "+ lotto_nums[5].style.backgroundColor +"'>"+ lottoArr[5] +"</div>" +
+                        "<img src='img/plus.png' alt='plus_icon'>" + 
+                        "<div class='lotto_record_num' style='background-color: "+ lotto_nums[6].style.backgroundColor +"'>"+ lottoArr[6] +"</div>";
+    document.getElementById('record').appendChild(plusLi);
 }
