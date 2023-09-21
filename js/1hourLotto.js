@@ -2,7 +2,6 @@ const lotto_box = document.getElementsByClassName('lotto_box')[0];
 const lotto_nums = document.getElementsByClassName('lotto_num');
 const blur = document.getElementsByClassName('blur_box')[0];
 const comment = document.getElementsByClassName('comment')[0];
-const lotto_record_nums = document.getElementsByClassName('lotto_record_num');
 let colors = ['red', 'yellow', 'blue', 'white'];
 let i = 0;
 
@@ -132,9 +131,14 @@ function start() {
     }, 15000);
 }
 
+let count = 0;
+
 function plusFun() {
+    let record_items;
     let plusLi = document.createElement('li');
-    plusLi.innerHTML = "<div class='lotto_record_num' style='background-color: "+ lotto_nums[0].style.backgroundColor +"'>"+ lottoArr[0] +"</div>" +
+    plusLi.classList.add('record_item');
+    plusLi.innerHTML = "<div class='time'>" + today.getHours() + ": 00 : 00</div>" +
+                        "<div class='lotto_record_num' style='background-color: "+ lotto_nums[0].style.backgroundColor +"'>"+ lottoArr[0] +"</div>" +
                         "<div class='lotto_record_num' style='background-color: "+ lotto_nums[1].style.backgroundColor +"'>"+ lottoArr[1] +"</div>" +
                         "<div class='lotto_record_num' style='background-color: "+ lotto_nums[2].style.backgroundColor +"'>"+ lottoArr[2] +"</div>" +
                         "<div class='lotto_record_num' style='background-color: "+ lotto_nums[3].style.backgroundColor +"'>"+ lottoArr[3] +"</div>" +
@@ -142,5 +146,10 @@ function plusFun() {
                         "<div class='lotto_record_num' style='background-color: "+ lotto_nums[5].style.backgroundColor +"'>"+ lottoArr[5] +"</div>" +
                         "<img src='img/plus.png' alt='plus_icon'>" + 
                         "<div class='lotto_record_num' style='background-color: "+ lotto_nums[6].style.backgroundColor +"'>"+ lottoArr[6] +"</div>";
-    document.getElementById('record').appendChild(plusLi);
+    document.getElementById('record').prepend(plusLi);
+    count++;
+    if(count > 5) {
+        record_items = document.getElementsByClassName('record_item');
+        document.getElementById('record').removeChild(record_items[5]);
+    }
 }

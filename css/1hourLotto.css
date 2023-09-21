@@ -133,9 +133,8 @@ a {
 .lotto_record_box {
     text-align: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     border: 1px solid yellow;
-    margin-top: 50px;
 }
 
 .lotto_record_title {
@@ -170,4 +169,12 @@ a {
     margin: 10px 30px;
     background-color: white;
     border-radius: 50%;
+}
+
+.time {
+    display: flex;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
 }
