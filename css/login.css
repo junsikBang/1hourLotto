@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.container_wrap {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.container {
+    width: 350px;
+    height: 300px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 0.6rem;
+    text-align: center;
+}
+
+.logo {
+     color: blue;
+}
+
+.logo_part {
+    color: red;
+}
+
+input {
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-indent: 5px;
+    outline-color: green;
+    background-color: black;
+    color: green;
+}
+
+.loginBtn {
+    display: block;
+    width: 250px;
+    height: 30px;
+    margin: 30px auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: medium;
+    background-color: black;
+    color: green;
+}
