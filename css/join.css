@@ -18,11 +18,11 @@ body {
 }
 
 .logo {
-     color: blue;
+    color: blue;
 }
 
 .logo_part {
-    color: red;
+   color: red;
 }
 
 input {
@@ -37,25 +37,15 @@ input {
     color: green;
 }
 
-.loginBtn {
+.joinBtn {
     display: block;
     width: 250px;
     height: 30px;
-    margin: 30px auto 20px;
+    margin: 30px auto;
     border: 1px solid white;
     border-radius: 5px;
     font-weight: bold;
     font-size: medium;
     background-color: black;
     color: green;
-}
-
-.account {
-    margin: 20px;
-}
-
-.account > a {
-    text-decoration: none;
-    color: green;
-    font-weight: bold;
 }

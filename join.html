@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/join.css">
 </head>
 <body>
     <div class="container_wrap">
@@ -12,17 +12,16 @@
             <header>
                 <h1 class="logo">1HOUR <span class="logo_part">LOTTO</span></h1>
             </header>
-            <form name="login" action="">
+            <form name="join" action="" method="post">
                 <input id="id" type="text" placeholder="아이디">
+                <input id="username" type="text" placeholder="성명">
+                <input id="nickname" type="text" placeholder="사용자 이름">
                 <input id="pwd" type="password" placeholder="비밀번호">
-                <button id="loginBtn" type="button" class="loginBtn">로그인</button>
+                <button id="joinBtn" type="button" class="joinBtn">회원가입</button>
             </form>
-            <div class="account">
-                <a href="join.html">회원가입</a>
-            </div>
         </div>
     </div>
 
-    <script src="js/login.js"></script>
+    <script src="js/join.js"></script>
 </body>
 </html>
