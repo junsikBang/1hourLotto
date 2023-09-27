@@ -178,3 +178,40 @@ a {
     font-weight: bold;
     align-items: center;
 }
+
+.user_lotto_box {
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+    border: 1px solid green;
+}
+
+.user_lotto_title {
+    color: white;
+    border-bottom: 1px solid green;
+}
+
+#my_lottos {
+    list-style: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#my_lottos > li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid green;
+    font-size: 20px;
+}
+
+.my_nums {
+    width: 80%;
+    padding: 10px;
+}
+
+.result {
+    width: 20%;
+    padding: 10px;
+    border-left: 1px solid green;
+}
