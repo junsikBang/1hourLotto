@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid white;
+}
+
+.navbar_logo {
+    color: blue;
+}
+
+.navbar_logo_part {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 50px;
+}
+
+.navbar_menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navbar_menu a:hover {
+    background-color: orange;
+    border-radius: 3px;
+}
+
+.navbar_profile {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navbar_profile li {
+    padding: 8px 12px;
+    margin: 0;
+}
+
+#money_stat {
+    display: none;
+}
+
+fieldset {
+    width: 50%;
+    margin: 100px auto;
+    color: white;
+}
+
+legend {
+    color: white;
+}
+
+input[type=text] {
+    width: 30px;
+}

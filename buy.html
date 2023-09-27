@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="navbar_logo">
+            1HOUR <span class="navbar_logo_part">LOTTO</span>
+        </h1>
+
+        <ul class="navbar_menu">
+            <li><a href="index.html">홈</a></li>
+            <li><a href="buy.html">구매</a></li>
+            <li><a href="#">마이페이지</a></li>
+        </ul>
+
+        <ul class="navbar_profile">
+            <li><a href="login.html">로그인</a></li>
+            <li id="money_stat"><a>보유금액 : <span id="money">0</span>원</a></li>
+        </ul>
+    </nav>
+
+    <form action="#">
+        <fieldset>
+            <legend>자동</legend>
+            <input type="radio" name="buy_num" value="1">1회
+            <input type="radio" name="buy_num" value="2">2회
+            <input type="radio" name="buy_num" value="3">3회
+            <input type="radio" name="buy_num" value="4">4회
+            <input type="radio" name="buy_num" value="5">5회
+            <input type="reset" value="추첨">
+            <input type="submit" value="구매">
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <fieldset>
+            <legend>수동</legend>
+            N1: <input type="text">
+            N2: <input type="text">
+            N3: <input type="text">
+            N4: <input type="text">
+            N5: <input type="text">
+            N6: <input type="text">
+            <input type="submit" value="구매">
+            <input type="reset" value="리셋">
+        </fieldset>
+    </form>
+</body>
+</html>
