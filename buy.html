@@ -32,8 +32,13 @@
             <input type="radio" name="buy_num" value="3">3회
             <input type="radio" name="buy_num" value="4">4회
             <input type="radio" name="buy_num" value="5">5회
-            <input type="reset" value="추첨">
+            <input type="button" id="lottery_btn" value="추첨">
             <input type="submit" value="구매">
+            <div class="auto_lotto_box">
+                <ul class="auto_lotto_box_list">
+                    <li></li>
+                </ul>
+            </div>
         </fieldset>
     </form>
 
@@ -50,5 +55,7 @@
             <input type="reset" value="리셋">
         </fieldset>
     </form>
+
+    <script src="js/buy.js"></script>
 </body>
 </html>
