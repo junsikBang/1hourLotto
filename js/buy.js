@@ -44,6 +44,8 @@ lotteryBtn.addEventListener('click', () => {
 
                 let plusLi = document.createElement('li');
                 plusLi.innerHTML = "<li>" + str + "</li>";
+                /* plusLi.innerHTML = "<li>" + lottery_num_arr[i][0] + lottery_num_arr[i][1] + lottery_num_arr[i][2] +
+                lottery_num_arr[i][3] + lottery_num_arr[i][4] + lottery_num_arr[i][5] + "</li>"; */
                 auto_box.prepend(plusLi);
             }
         }

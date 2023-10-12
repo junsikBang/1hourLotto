@@ -70,6 +70,6 @@ input[type=text] {
 .auto_lotto_box {
     width: 100%;
     height: auto;
-    background-color: red;
-    margin-top: 10px;
+    border: 1px solid white;
+    margin-top: 10px; 
 }
