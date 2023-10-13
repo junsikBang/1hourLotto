@@ -1,7 +1,7 @@
 const lotteryBtn = document.getElementById('lottery_btn');
 const numNodeList = document.getElementsByName('buy_num');
 const auto_box = document.getElementById('auto_lotto_box_list');
-
+const pay_box = document.getElementById('payment_box');
 
 let lotto;
 let lottoArr = new Array();
@@ -47,6 +47,9 @@ lotteryBtn.addEventListener('click', () => {
                 /* plusLi.innerHTML = "<li>" + lottery_num_arr[i][0] + lottery_num_arr[i][1] + lottery_num_arr[i][2] +
                 lottery_num_arr[i][3] + lottery_num_arr[i][4] + lottery_num_arr[i][5] + "</li>"; */
                 auto_box.prepend(plusLi);
+
+                pay_box.innerText = "금액 : " + node.value * 1000 + " 원";
+                pay_box.style.display = "block"; 
             }
         }
     })

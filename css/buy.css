@@ -73,3 +73,13 @@ input[type=text] {
     border: 1px solid white;
     margin-top: 10px; 
 }
+
+#payment_box {
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    margin-top: 10px; 
+    padding: 10px;
+    display: none;
+    box-sizing: border-box;
+}
