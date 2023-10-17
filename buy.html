@@ -33,13 +33,13 @@
             <input type="radio" name="buy_num" value="4">4회
             <input type="radio" name="buy_num" value="5">5회
             <input type="button" id="lottery_btn" value="추첨">
-            <input type="submit" value="구매">
+            <input type="submit" value="구매" id="auto_buy_btn">
             <div class="auto_lotto_box">
                 <ul id="auto_lotto_box_list">
                     
                 </ul>
             </div>
-            <div id="payment_box">
+            <div id="auto_payment_box">
                 금액 :  원
             </div>
         </fieldset>
@@ -48,14 +48,23 @@
     <form action="#">
         <fieldset>
             <legend>수동</legend>
-            N1: <input type="text">
-            N2: <input type="text">
-            N3: <input type="text">
-            N4: <input type="text">
-            N5: <input type="text">
-            N6: <input type="text">
-            <input type="submit" value="구매">
-            <input type="reset" value="리셋">
+            N1: <input type="text" name="manual_num" value="">
+            N2: <input type="text" name="manual_num" value="">
+            N3: <input type="text" name="manual_num" value="">
+            N4: <input type="text" name="manual_num" value="">
+            N5: <input type="text" name="manual_num" value="">
+            N6: <input type="text" name="manual_num" value="">
+            <input type="button" value="추가" id="manual_add_btn">
+            <input type="reset" value="리셋" id="manual_reset_btn">
+            <input type="submit" value="구매" id="manual_buy_btn">
+            <div class="manual_lotto_box">
+                <ul id="manual_lotto_box_list">
+                    
+                </ul>
+            </div>
+            <div id="manual_payment_box">
+                금액 :  원
+            </div>
         </fieldset>
     </form>
 
