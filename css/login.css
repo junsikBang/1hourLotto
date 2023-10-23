@@ -59,3 +59,7 @@ input {
     color: green;
     font-weight: bold;
 }
+
+a {
+    text-decoration: none;
+}
