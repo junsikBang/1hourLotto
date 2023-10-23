@@ -8,6 +8,11 @@ const manual_pay_box = document.getElementById('manual_payment_box');
 const manual_nums = document.getElementsByName('manual_num');
 const manual_addBtn = document.getElementById('manual_add_btn');
 const manual_resetBtn = document.getElementById('manual_reset_btn');
+const popup = document.getElementById('popup');
+const ok_btn = document.querySelector('.ok_btn');
+const close_btn = document.querySelector('.close_btn');
+const auto_buy_btn = document.getElementById('auto_buy_btn');
+const manual_buy_btn = document.getElementById('manual_buy_btn');
 
 let lotto;
 let lottoArr = new Array();
@@ -144,4 +149,25 @@ manual_resetBtn.addEventListener('click', () => {
     removeAllchild(manual_box);
     manual_pay_box.innerText = "";
     manual_pay_box.style.display = "none";
+})
+
+function openPopup() {
+    popup.style.display = 'flex';
+}
+
+function closePopup() {
+    popup.style.display = 'none';
+}
+
+ok_btn.addEventListener('click', closePopup);
+close_btn.addEventListener('click', closePopup);
+
+auto_buy_btn.addEventListener('clcik', () => {
+    
+    openPopup();
+})
+
+manual_buy_btn.addEventListener('clcik', () => {
+
+    openPopup()
 })
