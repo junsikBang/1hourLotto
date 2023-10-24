@@ -13,9 +13,12 @@ const ok_btn = document.querySelector('.ok_btn');
 const close_btn = document.querySelector('.close_btn');
 const auto_buy_btn = document.getElementById('auto_buy_btn');
 const manual_buy_btn = document.getElementById('manual_buy_btn');
+const pay_value = document.getElementById('pay_value');
 
 let lotto;
 let lottoArr = new Array();
+let auto_payment = 0;
+let manual_payment = 0;
 
 let lottery_num_arr = new Array(5);
 for(let i = 0; i < lottery_num_arr.length; i++) {
@@ -59,7 +62,8 @@ lotteryBtn.addEventListener('click', () => {
                 lottery_num_arr[i][3] + lottery_num_arr[i][4] + lottery_num_arr[i][5] + "</li>"; */
                 auto_box.prepend(plusLi);
 
-                auto_pay_box.innerText = "금액 : " + node.value * 1000 + " 원";
+                auto_payment = node.value * 1000;
+                auto_pay_box.innerText = "금액 : " + auto_payment + " 원";
                 auto_pay_box.style.display = "block"; 
             }
         }
@@ -130,7 +134,8 @@ manual_addBtn.addEventListener('click', () => {
     plusLi.innerHTML = "<li>" + str + "</li>";
     manual_box.prepend(plusLi);
 
-    manual_pay_box.innerText = "금액 : " + 1000 * count + " 원";
+    manual_payment = 1000 * count;
+    manual_pay_box.innerText = "금액 : " + manual_payment + " 원";
     manual_pay_box.style.display = "block";
     text_reset();
 })
@@ -149,6 +154,7 @@ manual_resetBtn.addEventListener('click', () => {
     removeAllchild(manual_box);
     manual_pay_box.innerText = "";
     manual_pay_box.style.display = "none";
+    manual_payment = 0;
 })
 
 function openPopup() {
@@ -162,12 +168,13 @@ function closePopup() {
 ok_btn.addEventListener('click', closePopup);
 close_btn.addEventListener('click', closePopup);
 
-auto_buy_btn.addEventListener('clcik', () => {
-    
+auto_buy_btn.addEventListener('click', () => {
+    pay_value.innerText = auto_payment;
     openPopup();
 })
 
-manual_buy_btn.addEventListener('clcik', () => {
-
+manual_buy_btn.addEventListener('click', () => {
+    pay_value.innerText = manual_payment;
     openPopup()
 })
+
